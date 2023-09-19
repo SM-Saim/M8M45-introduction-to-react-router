@@ -1,7 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const PostDetail = () => {
   const postDetail = useLoaderData();
+  const navigate = useNavigate();
+
+  const hancleGoBack = () => {
+    navigate(-1);
+  };
+
   const { id, body, title } = postDetail;
   return (
     <div className="useStyle">
@@ -10,6 +16,7 @@ const PostDetail = () => {
       <p>
         <small>Details: {body}</small>
       </p>
+      <button onClick={hancleGoBack}>Go back</button>
     </div>
   );
 };
