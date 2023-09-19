@@ -1,0 +1,7 @@
+.useStyle {
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(71, 61, 139, 0.377);
+}
