@@ -6,7 +6,7 @@ const Header = () => {
     <div>
       <nav>
         <span>Welcome to my Website</span>
-        <br />
+        <hr />
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
         <Link to="about">About</Link>
